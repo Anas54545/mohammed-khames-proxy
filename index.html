@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mohammed Khames Proxy</title>
+<style>
+:root{color-scheme:dark;--bg:#08111f;--panel:#101e31;--line:#243750;--muted:#9fb0c5;--accent:#43d6a2}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:system-ui,Arial;background:radial-gradient(circle at 50% 0,#17314c,#08111f 55%);color:#eef5ff;display:grid;place-items:center;padding:22px}
+main{width:min(680px,100%);background:#101e31eF;border:1px solid var(--line);border-radius:24px;padding:clamp(22px,5vw,42px);box-shadow:0 24px 80px #0008}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:28px}.logo{width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,#43d6a2,#167e9c);display:grid;place-items:center;color:#06151b;font-size:25px;font-weight:900}
+h1{font-size:clamp(23px,5vw,32px);margin:0}.sub{color:var(--muted);font-size:13px;margin-top:4px}
+h2{font-size:20px;margin:0 0 8px}.desc{color:var(--muted);line-height:1.8;margin:0 0 24px}
+label{display:block;margin:0 0 9px;font-size:14px;color:#d8e5f5}
+.inputrow{display:flex;gap:10px;flex-wrap:wrap}input{flex:1;min-width:180px;background:#081523;border:1px solid #314963;border-radius:13px;padding:16px;color:white;font-size:16px;direction:ltr;text-align:left;outline:none}input:focus{border-color:var(--accent)}
+button{border:0;border-radius:13px;padding:0 25px;min-height:52px;background:var(--accent);color:#062019;font-weight:800;font-size:16px;cursor:pointer}
+.note{margin-top:20px;padding:14px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:12px;line-height:1.8}
+.status{display:flex;align-items:center;gap:8px;color:#b9f7df;font-size:12px;margin-top:22px}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+footer{color:#7890aa;text-align:center;font-size:11px;margin-top:24px}
+</style>
+</head>
+<body><main>
+<div class="brand"><div class="logo">MK</div><div><h1>Mohammed Khames Proxy</h1><div class="sub">PRIVATE WEB PROXY</div></div></div>
+<h2>تصفّح من خلال البروكسي</h2>
+<p class="desc">اكتب عنوان الموقع الذي تريد فتحه. هذه واجهة المشروع الأولية؛ يلزم ربطها بخادم البروكسي قبل أن تبدأ بتمرير التصفح.</p>
+<form id="proxyForm"><label for="url">رابط الموقع</label><div class="inputrow"><input id="url" type="url" placeholder="https://example.com" required><button type="submit">فتح الموقع</button></div></form>
+<div class="note">تنبيه أمني: لا تدخل كلمات مرور أو بيانات بنكية عبر بروكسي غير موثوق. لا تشارك عنوان الخادم أو تفتحه للعامة قبل تفعيل الحماية.</div>
+<div class="status"><span class="dot"></span>واجهة المشروع جاهزة — الخادم غير مربوط بعد</div>
+<footer>Mohammed Khames Proxy · IPv4 preferred</footer>
+</main>
+<script>
+document.getElementById('proxyForm').addEventListener('submit',e=>{e.preventDefault();alert('واجهة العرض جاهزة، لكن خدمة البروكسي الخلفية لم تُربط بعد. يلزم نشر الخادم وإعداده أولاً.');});
+</script></body></html>
